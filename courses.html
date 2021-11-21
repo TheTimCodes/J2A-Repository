@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Courses </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Kanit&family=Lora&family=Noto+Serif&family=Outfit&family=Roboto&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c24350cf16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: rgb(230, 149, 0);
+        }
+        
+        .navbar {
+            background-color: rgb(27, 26, 37);
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            padding: 15px;
+            position: sticky;
+        }
+        
+        .navtitle {
+            color: white;
+            display: inline;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            margin-left: 40px;
+            margin-right: 80px;
+        }
+        
+        .navlist {
+            border-left: 3px solid rgb(255, 217, 0);
+            color: white;
+            display: inline;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            transition-duration: 0.3s;
+        }
+        
+        .navlist:hover {
+            color: rgb(0, 250, 0);
+            font-size: 25px;
+        }
+        
+        .quart {
+            float: left;
+            width: 25%;
+        }
+        
+        .hover {
+            transition-duration: 0.3s;
+        }
+        
+        .hover:hover {
+            border-bottom: white;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar" style="position:sticky">
+        <li class="navtitle">
+            <a id="logo" href="Index.html">
+                <img id="navimg" alt="J2A Logo" src="Images/J2Alogo.png">
+                <span id="edulei" style="color:rgb(255, 208, 0)">Education</span>
+                <span style="font-size: 30px">&</span>
+                <span style="font-size: 30px; color: rgb(255, 208, 0)"> Leisure</span></a>
+        </li>
+        <li style="float: right; margin-top: 70px; list-style-type: none">
+            <a class="navlist" href="Leisure.html" target="_blank">Music</a></li>
+        <li style="float: right; margin-top: 70px; list-style-type: none">
+            <a class="navlist" href="videos.html">Videos</a></li>
+        <li style="float: right; margin-top: 70px; list-style-type: none">
+            <a class="navlist" id="active" href="courses.html">Courses</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="quart">
+            <a class="hover" href="Images/Biology.pdf"><img alt="The Science Book" src="Images/Science2.jpg" style="width: 100%"></a>
+        </div>
+
+        <div class="quart">
+            <a class="hover" href="Images/History.pdf"><img alt="The History Book" src="Images/History2.jpg" style="width: 100%"></a>
+        </div>
+
+        <div class="quart">
+            <a class="hover" href="Images/Trivia.pdf"><img alt="The Trivia Book" src="Images/Trivia2.jpg" style="width: 100%"></a>
+        </div>
+
+        <div class="quart">
+            <a class="hover" href="Images/Language.pdf"><img alt="The Language Book" src="Images/Language2.jpg" style="width: 100%"></a>
+        </div>
+    </div>
+</body>
+
+</html>
