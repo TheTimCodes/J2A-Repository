@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Homepage </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Lora&family=Noto+Serif&family=Outfit&family=Roboto&family=Shippori+Antique&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c24350cf16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: rgb(51, 51, 51);
+        }
+        
+        .navbar {
+            background-color: rgb(27, 26, 37);
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            padding: 15px;
+            position: sticky;
+        }
+        
+        .navtitle {
+            color: white;
+            display: inline;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            list-style-type: none;
+            margin-left: 40px;
+            margin-right: 80px;
+        }
+        
+        .navlist {
+            border-left: 3px solid rgb(255, 217, 0);
+            color: white;
+            display: inline;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            transition-duration: 0.3s;
+        }
+        
+        .navlist:hover {
+            color: rgb(0, 250, 0);
+            font-size: 25px;
+        }
+        
+        .intro {
+            background-image: url("Images/Kiddos2.jpg");
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -16px;
+            width: 100%;
+        }
+        
+        .space {
+            padding-top: 180px;
+            padding-bottom: 180px;
+        }
+        
+        .introt {
+            background-color: black;
+            background-color: rgb(0, 0, 0, 0.7);
+            text-align: left;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        
+        .genp {
+            color: white;
+            font-family: 'Shippori Antique', sans-serif;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        
+        .half1 {
+            float: left;
+            width: 50%;
+        }
+        
+        .half2 {
+            float: left;
+            width: 50%;
+        }
+        
+        .edu {
+            background-color: rgb(0, 61, 0);
+            border: 3px solid rgb(88, 88, 88);
+            border-radius: 5px;
+            padding-top: 15px;
+            margin-left: 100px;
+            margin-right: 20px;
+            transition-duration: 0.3s;
+        }
+        
+        .edu:hover {
+            background-color: rgb(0, 93, 0);
+            border: 3px solid rgb(192, 192, 192);
+            text-shadow: 0 0 5px black;
+        }
+        
+        .vids {
+            background-color: rgb(0, 23, 65);
+            border: 3px solid rgb(88, 88, 88);
+            border-radius: 5px;
+            padding-top: 15px;
+            margin-left: 20px;
+            margin-right: 100px;
+            transition-duration: 0.3s;
+        }
+        
+        .vids:hover {
+            background-color: rgb(0, 37, 139);
+            border: 3px solid rgb(192, 192, 192);
+            text-shadow: 0 0 5px black;
+        }
+        
+        .heading {
+            color: white;
+            font-family: 'Noto Serif', serif;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        .button {
+            background-color: black;
+            background-color: rgb(0, 0, 0, 0.7);
+            color: rgb(255, 227, 151);
+            font-size: 70px;
+            padding: 10px;
+            text-align: center;
+            transition-duration: 0.3s;
+        }
+        
+        .button2 {
+            background-color: black;
+            background-color: rgb(0, 0, 0, 0.7);
+            color: rgb(255, 87, 87);
+            font-size: 70px;
+            padding: 10px;
+            text-align: center;
+            transition-duration: 0.3s;
+        }
+        
+        .button:hover {
+            font-size: 80px;
+        }
+        
+        .button2:hover {
+            font-size: 80px;
+        }
+        
+        .full {
+            float: left;
+            width: 100%;
+        }
+        
+        .music {
+            background-color: rgb(129, 95, 0);
+            border: 3px solid rgb(88, 88, 88);
+            border-radius: 5px;
+            padding-top: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
+            transition-duration: 0.3s;
+        }
+        
+        .music:hover {
+            background-color: rgb(182, 118, 0);
+            border: 3px solid rgb(192, 192, 192);
+            text-shadow: 0 0 5px black;
+        }
+        
+        .headbout {
+            color: rgb(170, 82, 0);
+            font-family: 'Lora', serif;
+            font-size: 40px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .pbout {
+            color: rgb(0, 0, 0);
+            font-family: 'Shippori Antique', sans-serif;
+            font-size: 20px;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .quart {
+            float: left;
+            width: 25%;
+        }
+        
+        .block {
+            border-radius: 50%;
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .blockp {
+            color: white;
+            font-family: 'Shippori Antique', sans-serif;
+            font-size: 20px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .footerbg {
+            background-color: black;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .footerp {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            transition-duration: 0.3s;
+        }
+        
+        .footerp:hover {
+            font-size: 60px;
+            color: rgb(255, 187, 0);
+        }
+        
+        .cright {
+            color: rgb(255, 255, 255);
+            font-family: 'Shippori Antique', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar" style="position:sticky">
+        <li class="navtitle">
+            <a id="logo" href="Index.html">
+                <img id="navimg" alt="J2A Logo" src="Images/J2Alogo.png">
+                <span id="edulei" style="color:rgb(255, 208, 0)">Education</span>
+                <span style="font-size: 30px">&</span>
+                <span style="font-size: 30px; color: rgb(255, 208, 0)"> Leisure</span></a>
+        </li>
+        <li style="float: right; margin-top: 70px; list-style-type: none">
+            <a class="navlist" id="bordright" href="Leisure.html" target="_blank">Music</a></li>
+        <li style="float: right; margin-top: 70px; list-style-type: none">
+            <a class="navlist" href="videos.html">Videos</a></li>
+        <li style="float: right; margin-top: 70px; list-style-type: none">
+            <a class="navlist" href="courses.html">Courses</a></li>
+    </ul>
+
+    <div style="background-color: rgb(51, 51, 51)">
+        <div>
+            <div class="intro">
+                <div class="space">
+                    <p class="introt"><span style="color: rgb(255, 255, 255)">Explore.</span>
+                        <span style="font-size: 60px; color: rgb(255, 208, 0)">Learn.</span>
+                        <span style="font-size: 40px; color: rgb(255, 255, 255)">Enjoy.</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 40px">
+            <div class="half1">
+                <div class="edu">
+                    <h1 class="heading">COURSES</h1>
+                    <p class="genp">Get Access to <span style="color: rgb(255, 157, 0)"> +10 Terms </span> in this course. Engage in different subjects that matches your interest! <i>Click the icon below.</i>
+                    </p>
+                    <div class="button">
+                        <a style="color: rgb(255, 174, 0)" href="courses.html">
+                            <i id="button" class="fas fa-book "></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half2 ">
+                <div class="vids ">
+                    <h1 class="heading">VIDEOS</h1>
+                    <p class="genp ">Want something catchy? Here are some of our suggested educational videos. Enjoy the feels! <i>Click the icon below.</i></p>
+                    <div class="button2">
+                        <a style="color: rgb(255, 60, 0) " href="videos.html">
+                            <i class="fab fa-youtube "></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="full" style="margin-top: 20px;">
+                    <div class="music">
+                        <h1 class="heading">MUSIC</h1>
+                        <p class="genp" style="font-family: 'Roboto', sans-serif;
+                    font-size: 25px;">Stick with the vibes from our suggested music playlist while studying. </p>
+                        <div class="button2">
+                            <a style="color: rgb(255, 255, 255)" href="Leisure.html" target="_blank">
+                                <i class="fas fa-headphones-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="full" style="margin-top: 30px; background-color: rgb(255, 174, 0);">
+                    <div>
+                        <h1 class="headbout">OUR TEAM</h1>
+                        <p class="pbout">Meet the J2A Edu and Leisure Team!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="quart">
+                    <img alt="Aaron's Face" class="block" src="Images/Aaron2.jpg" style="width: 200px">
+                    <p class="blockp">Aaron Timothy Dumlao</p>
+                </div>
+
+                <div class="quart">
+                    <img alt="Angela's Face" class="block" src="Images/Gel.jpg" style="width: 200px">
+                    <p class="blockp">Angela Yeshuah Buted</p>
+                </div>
+
+                <div class="quart">
+                    <img alt="Jaedon's Face" class="block" src="Images/Jaedon.jpg" style="width: 200px">
+                    <p class="blockp">Jaedon Aleck Taruc</p>
+                </div>
+
+                <div class="quart">
+                    <img alt="Joshua's Face" class="block" src="Images/Joshua.jpg" style="width: 200px">
+                    <p class="blockp">Joshua Angelo Santos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="full footerbg">
+                <div style="text-align: center;">
+                    <a class="footerp" href="https://docs.google.com/document/d/1M_-hmsM0JZkHcHnB0_Si5UNocKdMEN5ZjIya5QJJvm4/edit"><i class="fas fa-file-alt"></i></a>
+                    <p class="cright">Copyright <i class="far fa-copyright"></i> 2021, J2A Website Production Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
